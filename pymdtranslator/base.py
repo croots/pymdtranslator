@@ -25,7 +25,7 @@ def yield_blog_post_sections(file, word_limit):
         yield file_string
 
 
-def request_translation(file, word_limit=150):
+def request_translation(file, word_limit=250):
     language_config = json.load(open(".languagesettings.json"))
 
     batch_UUID = str(uuid.uuid4())
@@ -87,7 +87,7 @@ def build_batch(batch_id):
 
     for language in results:
         language_data = language_config[language]
-        destination_file = f"{file_name}_{language_data["code"]}{file_type}"
+        destination_file = f"{file_name}.{language_data["code"]}{file_type}"
         with open(destination_file, "w") as f:
             f.write(results[language])
         print(f"Translation for {language} saved to {destination_file}")
