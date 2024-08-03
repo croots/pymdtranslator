@@ -3,7 +3,7 @@
 
 A translation tool (quickly put together) for markdown files written in Python. Currently only supports OpenAI. This uses the batch API to reduce the cost of translation. With GPT-4o-mini and batching, the cost is less than a penny to translate a ~500 English word document to 10 different languagees.
 
-The translation is done in batches as I've noticed GPT-4o starts drop content after a certain point if you just throw a whole doccument at it.
+The translation is done in batches as I've noticed GPT-4o starts drop content after a certain point if you just throw a whole document at it.
 
 At this time, this is a quick implementation. Content may be uploaded to OpenAI in a way where it splits things like code blocks (which might result in extra formatting) that could require additional clean up.
 
