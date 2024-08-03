@@ -7,7 +7,7 @@ The translation is done in batches as I've noticed GPT-4o starts drop content af
 
 At this time, this is a quick implementation. Content may be uploaded to OpenAI in a way where it splits things like code blocks (which might result in extra formatting) that could require additional clean up.
 
-This was built in a way to be extensible, so we can add additioanl providers in the future like self hosted solutions, or Bard.
+This was built in a way to be extensible, so we can add additional providers in the future like self hosted solutions, or Bard.
 
 Its worth checking out [this other project](https://github.com/smikitky/chatgpt-md-translator) which accomplishes the same goal but it A) is more refined B) is written in TypeScript and C) does not use the batch API at time of writing.
 
