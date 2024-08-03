@@ -1,7 +1,7 @@
 
 # pymdtranslator
 
-A translation tool (quickly put together) for markdown files written in Python. Currently only supports OpenAI. This uses the batch API to reduce the cost of translation. With GPT-4o-mini and batching, the cost is less than a penny to translate a ~500 English word document to 10 different languagees.
+A translation tool (quickly put together) for markdown files written in Python. Currently only supports OpenAI. This uses the batch API to reduce the cost of translation. With GPT-4o-mini and batching, the cost is less than a penny to translate a ~500 English word document to 10 different languages.
 
 The translation is done in batches as I've noticed GPT-4o starts drop content after a certain point if you just throw a whole document at it.
 
@@ -49,4 +49,4 @@ Then run `pymdtranslator translate <file>` to translate the file.
 
 If your run is inturrupted, you can run `pymdtranslator build <UUID>` to resume from the process of pulling the results and assembling the files.
 
-The output will be new files in the same folder as the input file with the same name but with an additional tag based on the country code (ready to drop into [Zola](https://www.getzola.org/) for example).)
+The output will be new files in the same folder as the input file with the same name but with an additional tag based on the country code (ready to drop into [Zola](https://www.getzola.org/) for example).
