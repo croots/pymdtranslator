@@ -39,7 +39,7 @@ In a folder with your markdown files, create a new file called `.languagesetting
 }
 ```
 
-Create another folder called `.keys` containing your OpenAPI key. Don't do the translation in the same folder as where you're hosting your website or you'll leak your API key.
+Create another file called `.keys` containing your OpenAPI key. Don't do the translation in the same folder as where you're hosting your website or you'll leak your API key.
 
 ```
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -49,4 +49,4 @@ Then run `pymdtranslate translate <file>` to translate the file.
 
 If your run is interrupted, you can run `pymdtranslator build <UUID>` to resume from the process of pulling the results and assembling the files.
 
-The output will be new files in the same folder as the input file with the same name but with an additional tag based on the country code (ready to drop into [Zola](https://www.getzola.org/) for example).)
+The output will be new files in the same folder as the input file with the same name but with an additional tag based on the country code (ready to drop into [Zola](https://www.getzola.org/) for example).
