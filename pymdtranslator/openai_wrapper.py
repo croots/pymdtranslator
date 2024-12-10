@@ -9,9 +9,9 @@ def openai_format(
     id: str, model: str, language: str, dialect: str, content: str
 ) -> dict:
     if dialect:
-        system_message = f"You are a translation backend. Translate the user input into {language} using a {dialect} dialect. Only return the translation preserving the markdown structure."
+        system_message = f"You are a translation backend. Translate the user input into {language} using a {dialect} dialect. Only return the translation preserving the markdown structure. It is possible that you are starting mid-code block."
     else:
-        system_message = f"You are a translation backend. Translate the user input into {language}. Only return the translation in the matching markdown format."
+        system_message = f"You are a translation backend. Translate the user input into {language}. Only return the translation in the matching markdown format. It is possible that you are starting mid-code block."
     formatted_prompt = {
         "custom_id": id,
         "method": "POST",
